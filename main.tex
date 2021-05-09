@@ -1,8 +1,12 @@
 \documentclass{article}
-\usepackage{graphicx}
-\graphicspath{images/}
 
-\usepackage{blindtext}
+\usepackage{geometry}
+\geometry{letterpaper, portrait, margin=1in}
+
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+
+\usepackage{amsmath}
 
 \usepackage{subfiles} % Best loaded last in the preamble
 
@@ -10,14 +14,17 @@
 \author{Charles Kelley}
 \date{ }
 
+
 \begin{document}
 
 \maketitle
 
 \section{Purpose}
 \subfile{sections/purpose}
+\clearpage
 
 \section{Exercises 1.1}
-\subfile{sections/exercises1_1}
+\subfile{sections/ex1_1}
+
 
 \end{document}
