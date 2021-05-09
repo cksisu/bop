@@ -1,5 +1,5 @@
-\documentclass{article}
-
+\documentclass[14pt]{report}
+\usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \geometry{letterpaper, portrait, margin=1in}
 
@@ -7,7 +7,6 @@
 \graphicspath{{./images/}}
 
 \usepackage{amsmath}
-
 \usepackage{subfiles} % Best loaded last in the preamble
 
 \title{BOOK OF PROOF EXERCISES}
@@ -18,13 +17,16 @@
 \begin{document}
 
 \maketitle
-
-\section{Purpose}
-\subfile{sections/purpose}
+\tableofcontents{}
 \clearpage
 
-\section{Exercises 1.1}
-\subfile{sections/ex1_1}
+\section*{Purpose}
+\subfile{chapters/purpose}
+\clearpage
+
+\chapter{Sets}
+\section{Exercises}
+\subfile{chapters/ex1_1}
 
 
 \end{document}
