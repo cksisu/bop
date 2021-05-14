@@ -1,12 +1,15 @@
-\documentclass[14pt]{report}
+%% PREAMBLE %%
+\documentclass[12pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
-\geometry{letterpaper, portrait, margin=1in}
+\geometry{letterpaper, portrait}
 
 \usepackage{graphicx}
 \graphicspath{{./images/}}
 
+\usepackage{enumitem}
 \usepackage{amsmath}
+\usepackage{amsfonts}
 \usepackage{subfiles} % Best loaded last in the preamble
 
 \title{BOOK OF PROOF EXERCISES}
@@ -14,9 +17,11 @@
 \date{ }
 
 
+%% DOCUMENT %%
 \begin{document}
 
 \maketitle
+
 \tableofcontents{}
 \clearpage
 
@@ -24,6 +29,7 @@
 \subfile{chapters/purpose}
 \clearpage
 
+% Chapter 1: Sets
 \chapter{Sets}
 \section{Exercises}
 \subfile{chapters/ex1_1}

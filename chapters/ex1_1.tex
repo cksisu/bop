@@ -1,20 +1,80 @@
-
+%% PREAMBLE %%
 \documentclass[../main.tex]{subfiles}
 \graphicspath{{\subfix{../images/}}}
 
+%% DOCUMENT %%
 \begin{document}
 
-\renewcommand{\labelenumi}{\Alph{enumi}}
+\renewcommand{\labelenumi}{\textbf{\Alph{enumi}.}}
 \begin{enumerate}
+
   \item Write each of the following sets by listing their elements between braces.
 
-    \renewcommand{\labelenumii}{\arabic{enumii}}
+    \renewcommand{\labelenumii}{\textbf{\arabic{enumii}.}}
     \begin{enumerate}
-      \item $\{5x-1: x \epsilon Z\} = \{..., -16, -11, -6, 4, 9, 14,...\}$
-      \item 
+
+      \item $\{5x-1: x~\epsilon~\mathbb{Z}\} = \{\ldots, -16, -11, -6, -1, 4, 9, 14,\ldots\}$
+      \item $\{3x+2: x~\epsilon~\mathbb{Z}\} = \{\ldots, -7, -4, -1, 2, 5, 8, 11,\ldots\}$
+      \item $\{x~\epsilon~\mathbb{Z}: -2 <= x <7\} = \{-2, -1, 0, 1, 2, 3, 4, 5, 6\}$
+      \item $\{x~\epsilon~\mathbb{N}: -2 < x <= 7\} = \{1, 2, 3, 4, 5, 6\}$
+      \item $\{x~\epsilon~\mathbb{R}: x^2 = 3\} = \{-\sqrt3, \sqrt3\}$
+
+      \item $\{x~\epsilon~\mathbb{R}: x^2 = 9\} = \{-\sqrt9, \sqrt9\}$
+      \item $\{x~\epsilon~\mathbb{R}: x^2 + 5x = -6\} = \{-2\}$
+      \item $\{x~\epsilon~\mathbb{R}: x^3 + 5x^2 = -6x\} = \{-3, -2, 0\}$
+      \item $\{x~\epsilon~\mathbb{R}: \sin \pi x = 0\} = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}$
+      \item $\{x~\epsilon~\mathbb{R}: \cos x = 1\} = \{\ldots, -3\pi , -2\pi , -1\pi , 0, 1\pi , 2\pi , 3\pi , \ldots\}$
+
+      \item $\{x~\epsilon~\mathbb{Z}: |x| < 5\} = \{-4, -3, -2, -1, 0, 1, 2, 3, 4\}$
+      \item $\{x~\epsilon~\mathbb{Z}: |2x| < 5\} = \{-2, -1, 0, 1, 2\}$
+      \item $\{x~\epsilon~\mathbb{Z}: |6x| < 5\} = \{0\}$
+      \item $\{5x: x~\epsilon~\mathbb{Z}, |2x| <= 8\} = \{-20, -15, -10, -5, 0, 5, 10, 15, 20\}$
+      \item $\{5a + 2b: a, b~\epsilon~\mathbb{Z}\} = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}$
+
+      \item $\{6a + 2b: a, b~\epsilon~\mathbb{Z}\} = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}$
+
+    \end{enumerate}
+
+  \item Write each of the following sets in set builder notation.
+
+    \begin{enumerate}[resume]
+
+      \item $\{2, 4, 8, 16, 32, 64, \ldots\} = \{2x: x~\epsilon~\mathbb{N}\}$
+      \item $\{0, 4, 16, 36, 64, 100, \ldots\} = \{x^2: x~\epsilon~2\mathbb{Z}, x >= 0\}$
+      \item $\{\ldots, -6, -3, 0, 3, 6, 9, 12, 15, \ldots\} = \{3x: x~\epsilon~\mathbb{Z}\}$
+      \item $\{\ldots, -8, -3, 2, 7, 12, 17, \ldots\} = \{5x+2: x~\epsilon~2\mathbb{Z}\}$
+      \item $\{0, 1, 4, 9, 16, 25, 36, \ldots\} = \{x^2: x~\epsilon~2\mathbb{Z}, x >= 0\}$
+
+      \item $\{3, 6, 11, 18, 27, 38, \ldots\} = \{x^2+2: x~\epsilon~2\mathbb{Z}, x > 0\}$
+      \item $\{3, 4, 5, 6, 7, 8\} = \{x~\epsilon~2\mathbb{Z}: 3 <= x <= 8\}$
+      \item $\{-4, -3, -2, -1, 0, 1, 2\} = \{x~\epsilon~2\mathbb{Z}: -4 <= x <= 2\}$
+      \item $\{\ldots, \frac{1}{8}, \frac{1}{4}, \frac{1}{2}, 1, 2, 4, 8, \ldots\} = \{2^x: x~\epsilon~\mathbb{Z}\}$
+      \item $\{\ldots, \frac{1}{27}, \frac{1}{9}, \frac{1}{3}, 1, 3, 9, 27, \ldots\} = \{3^x: x~\epsilon~\mathbb{Z}\}$
+
+      \item $\{\ldots, -\pi, -\frac{\pi}{2}, 0, \frac{\pi}{2}, \pi, \frac{3\pi}{2}, \frac{2}{\pi}, \frac{5\pi}{2}, \ldots\} = \{\frac{x\pi}{2}: x~\epsilon~\mathbb{Z}\}$
+      \item $\{\ldots, -\frac{3}{2}, -\frac{3}{4}, 0, \frac{3}{4}, \frac{3}{2}, \frac{9}{4}, 3, \frac{15}{4}, \frac{9}{2}, \ldots\} = \{\frac{3x}{4}: x~\epsilon~\mathbb{Z}\}$
+      
+    \end{enumerate}
+
+  \item Find the following cardinalities.
+
+    \begin{enumerate}[resume]
+      
+      \item $|\{\{1\}, \{2, \{3, 4\}\}, \emptyset \}| = 3$
+      \item $|\{\{1, 4\}, a, b, \{\{3, 4\}\}, \{ \emptyset \}\}| = 5$
+      \item $|\{\{\{1\}, \{2, \{3, 4\}\}, \emptyset \}\}| = 1$
+      \item $|\{\{\{1, 4\}, a, b, \{\{3, 4\}\}, \{ \emptyset \}\}\}| = 1$
+      \item $|\{x~\epsilon~\mathbb{Z} : |x| < 10\}| = 19$
+
+      \item $|\{x~\epsilon~\mathbb{N} : |x| < 10\}| = 9$
+      \item $|\{x~\epsilon~\mathbb{Z} : x^2 < 10\}| = 7$
+      \item $|\{x~\epsilon~\mathbb{N} : x^2 < 10\}| = 3$
+      \item $|\{x~\epsilon~\mathbb{N} : x^2 < 0\}| = 0, \emptyset$
+      \item $|\{x~\epsilon~\mathbb{N} : 5x <= 20\}| = 4$
+
     \end{enumerate}
 
 \end{enumerate}
 
-
 \end{document}
+
